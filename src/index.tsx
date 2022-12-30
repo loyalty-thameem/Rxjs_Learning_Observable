@@ -13,7 +13,9 @@ const observable = new Observable((subscriber) => {
 
 console.log("Just before subscriber");
 
-observable.subscribe({
+observable.subscribe(\
+  // OBSERVER {.....} BELOW CODE
+  {
   next(x) {
     console.log("got value ", x);
   },
